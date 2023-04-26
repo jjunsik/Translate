@@ -1,7 +1,5 @@
 package main.java.translator;
 
-import com.sun.istack.internal.NotNull;
-
 import java.util.Map;
 
 public class EngToKorTranslator implements Translator {
@@ -24,7 +22,6 @@ public class EngToKorTranslator implements Translator {
 
     @Override
     public boolean isTranslated(String string) {
-        // value 값 즁에서 확인
         for (String value : engToKorDictionary.values()) {
             if (string.equals(value))
                 return true;

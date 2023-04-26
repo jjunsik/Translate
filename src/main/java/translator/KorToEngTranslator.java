@@ -22,7 +22,6 @@ public class KorToEngTranslator implements Translator {
 
     @Override
     public boolean isTranslated(String string) {
-        // value 값 즁에서 확인
         for (String value : korToEngDictionary.values()) {
             if (string.equals(value))
                 return true;

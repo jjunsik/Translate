@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class DictionaryLifeCycle {
 
-    private static final Dictionary dictionary; // 싱글톤
+    private static final Dictionary dictionary;
 
     static {
         // init
@@ -16,7 +16,7 @@ public class DictionaryLifeCycle {
         }
 
 
-        dictionary = new Dictionary(korToEngDict, engToKorDict); // 주입!
+        dictionary = new Dictionary(korToEngDict, engToKorDict);
     }
 
     public static Dictionary getDictionary() {
